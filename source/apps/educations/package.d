@@ -1,4 +1,4 @@
-module apps.myname;
+module apps.educations;
 
 mixin(ImportPhobos!());
 
@@ -8,7 +8,7 @@ public { // required uim libraries
   import uim.apps;
 }
 
-public { // admin-myname libraries
-  import apps.myname.controllers;
-  import apps.myname.views;
+public { // admin-educations libraries
+  import apps.educations.controllers;
+  import apps.educations.views;
 }
