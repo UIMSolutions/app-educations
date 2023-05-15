@@ -1,1 +1,1 @@
-# Package 📦 apps.myname.routers
+# Package 📦 apps.educations.routers

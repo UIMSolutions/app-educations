@@ -1,6 +1,6 @@
-module apps.myname.views;
+module apps.educations.views;
 
 public { // Packages
-  import apps.myname.views.actions;
-  import apps.myname.views.forms;
+  import apps.educations.views.actions;
+  import apps.educations.views.forms;
 }
