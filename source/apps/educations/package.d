@@ -10,5 +10,8 @@ public { // required uim libraries
 
 public { // admin-educations libraries
   import apps.educations.controllers;
+  import apps.educations.helpers;
+  import apps.educations.routers;
+  import apps.educations.tests;
   import apps.educations.views;
 }
