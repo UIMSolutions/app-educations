@@ -17,10 +17,10 @@ public { // admin-educations libraries
 }
 
 static this() {
-  AppRegistry.register(  
+  AppRegistry.register("apps.educations",   
     App
     .name("educationsApp")
-    .rootPath("/apps/ecm")
+    .rootPath("/apps/educations")
     .addRoute(Route("", HTTPMethod.GET, EDUIndexPageController))
     .addRoute(Route("/", HTTPMethod.GET, EDUIndexPageController)));
 }
