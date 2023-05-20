@@ -15,3 +15,12 @@ public { // admin-educations libraries
   import apps.educations.tests;
   import apps.educations.views;
 }
+
+static this() {
+  AppRegistry.register(  
+    App
+    .name("educationsApp")
+    .rootPath("/apps/ecm")
+    .addRoute(Route("", HTTPMethod.GET, EDUIndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, EDUIndexPageController)));
+}
