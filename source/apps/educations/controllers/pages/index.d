@@ -8,7 +8,7 @@ module apps.educations.controllers.pages.index;
 import apps.educations;
 @safe:
 
-class DEDUIndexPageController : DAPPPageController {
+class DEDUIndexPageController : DPageController {
   mixin(ControllerThis!("EDUIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {

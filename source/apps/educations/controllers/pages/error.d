@@ -8,7 +8,7 @@ module apps.educations.controllers.pages.error;
 import apps.educations;
 @safe:
 
-class DEDUErrorPageController : DAPPPageController {
+class DEDUErrorPageController : DPageController {
   mixin(ControllerThis!("EDUErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
