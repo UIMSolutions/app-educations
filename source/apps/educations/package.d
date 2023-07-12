@@ -18,9 +18,10 @@ public { // admin-educations libraries
 
 static this() {
   AppRegistry.register("apps.educations",   
-    App
-    .name("educationsApp")
-    .rootPath("/apps/educations")
-    .addRoute(Route("", HTTPMethod.GET, EDUIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, EDUIndexPageController)));
+    App("educationsApp", "/apps/educations")
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
