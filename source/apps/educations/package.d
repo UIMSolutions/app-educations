@@ -19,6 +19,7 @@ public { // admin-educations libraries
 static this() {
   AppRegistry.register("apps.educations",   
     App("educationsApp", "/apps/educations")
+      .importTranslations()
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),
         Route("/", HTTPMethod.GET, IndexPageController)

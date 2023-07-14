@@ -8,8 +8,8 @@ module apps.educations.controllers.pages.index;
 import apps.educations;
 @safe:
 
-class DEDUIndexPageController : DPageController {
-  mixin(ControllerThis!("EDUIndexPageController"));
+class DIndexPageController : DPageController {
+  mixin(ControllerThis!("IndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -18,4 +18,4 @@ class DEDUIndexPageController : DPageController {
       .view(EDUIndexView(this));
   }
 }
-mixin(ControllerCalls!("EDUIndexPageController"));
+mixin(ControllerCalls!("IndexPageController"));
