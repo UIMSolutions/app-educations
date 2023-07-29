@@ -17,12 +17,18 @@ public { // admin-educations libraries
 }
 
 static this() {
-  AppRegistry.register("apps.educations",   
-    App("educationsApp", "/apps/educations")
-      .importTranslations()
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
+  auto myApp = App("educationsApp", "apps/educations");
+
+  with (myApp) {
+    importTranslations;
+    addControllers([
+      "edu.index": IndexPageController
+    ]);
+    addRoutes(
+      Route("", HTTPMethod.GET, controller("edu.index")),
+      Route("/", HTTPMethod.GET, controller("edu.index"))
     );
+  }
+
+  AppRegistry.register("apps.educations", myApp);
 }
